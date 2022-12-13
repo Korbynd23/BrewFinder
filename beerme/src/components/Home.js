@@ -19,6 +19,7 @@ function Home() {
             console.error("Error fetching data: ", error)
         }, [])
     })
+
     return (
         <div>
             <h1 className="home">Lets Build This App!</h1>
