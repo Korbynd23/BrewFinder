@@ -1,3 +1,12 @@
+# Docs for this Project (API)
+https://www.openbrewerydb.org/documentation
+
+# Example of return 
+https://api.openbrewerydb.org/breweries
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
