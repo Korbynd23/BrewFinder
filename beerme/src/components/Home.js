@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react'
 
 
 function Home() {
-    // api function calls here maybe or in seperate folder?? Im thinking seperate folder
 
     useEffect(() => {
-        fetch(`https://api.openbrewerydb.org/breweries?by_city=columbus&per_page=3`)
+        fetch(`https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=columbus&per_page=5`)
         .then(response => {
             if (response.ok) {
                 console.log(response.json())
             }
             throw response;
         })
+        // type: cors pertains to securtiy measure from the site that hosts the fetch calls
         .catch(error => {
             console.error("Error fetching data: ", error)
         })
