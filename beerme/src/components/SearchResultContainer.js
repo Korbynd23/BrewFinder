@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 const SearchResultsContainer = () => {
-    // search stuff    const [brewery, setBrewery] = useState([]);
-    // api function calls here maybe or in seperate folder?? Im thinking seperate folder
+
     const [brewery, setBrewery] = useState([]);
     // api function calls here maybe or in seperate folder?? Im thinking seperate folder
- 
+
     useEffect(() => {
         url('https://api.openbrewerydb.org')
     }, [])
@@ -15,16 +14,16 @@ const SearchResultsContainer = () => {
         setBrewery(await r.json())
     }
 
-    return(
+    return (
         <div className="Home">
             <div>
-        {brewery.map((data) => {
-            console.log(data)
-            return(
-                <li className="Name" key={data.name}> <a href="{data.website_url}">{data.name} | {data.street} | {data.brewery_type}</a></li>
-            )
-        })}
-        </div>
+                {brewery.map((data) => {
+                    console.log(data)
+                    return (
+                        <li className="Name" key={data.name}> <a href="{data.website_url}">{data.name} | {data.street} | {data.brewery_type}</a></li>
+                    )
+                })}
+            </div>
         </div>
     );
 }
