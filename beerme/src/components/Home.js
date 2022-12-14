@@ -1,30 +1,39 @@
 import "../styles/app.css";
-import React, {useState, useEffect} from 'react'
+// import React, {useState, useEffect} from 'react'
+import SearchResultsContainer from "./SearchResultContainer";
 
-function Home() {
-    // api function calls here maybe or in seperate folder?? Im thinking seperate folder
-    // const 
-    
-    useEffect(() => {
-        // Fetches breweries by state and city
-        // TODO: integrate location access to allow latitude and longitude searches
-        fetch('https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=columbus&per_page=10')
-        .then(response => {
-            if(response.ok) {
-                console.log(response.json())
-            }
-            throw response;
-        })
-        .catch(error => {
-            console.error("Error fetching data: ", error)
-        }, [])
-    })
 
-    return (
-        <div>
-            <h1 className="home">Lets Build This App!</h1>
-        </div>
-    );
-}
+function App() {
+    // const filterBrew = value.replace(/^[0-9a-zA-Z]*$/, "")
+    // const [brewery, setBrewery] = useState([]);
+    // // api function calls here maybe or in seperate folder?? Im thinking seperate folder
+ 
+    // useEffect(() => {
+    //     url('https://api.openbrewerydb.org')
+    // }, [])
 
-export default Home;
+    // const url = async () => {
+    //     const r = await fetch('https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=columbus&per_page=10')
+    //     setBrewery(await r.json())
+    // }
+
+    // return(
+    //     <div className="Home">
+    //         <div>
+    //     {brewery.map((data) => {
+    //         return(
+    //             <li className="Name" key={data.name}> {data.name} | {data.street}</li>
+    //         )
+    //     })}
+    //     </div>
+    //     </div>
+    // );
+return(
+    <div>
+        <h1>HERE ARE SOME BREWERIES</h1>
+        <SearchResultsContainer/>
+    </div>
+)
+    }
+
+export default App;

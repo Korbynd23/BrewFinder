@@ -18,6 +18,8 @@ import Home from "./components/Home";
 //     console.log(data)
 //   })
 
-const App = () => <Home />;
+function App() { 
+return <Home />;
+}
 
 export default App;
