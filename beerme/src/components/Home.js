@@ -1,27 +1,20 @@
 import "../styles/app.css";
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
+// import SearchResultsContainer from "./SearchResultContainer";
+import SearchForm from "./SearchForm";
 
 function Home() {
 
-    useEffect(() => {
-        // Fetches breweries by state and city
-        // TODO: integrate location access to allow latitude and longitude searches (future development)
-        fetch('https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=columbus&per_page=10')
-        .then(response => {
-            if(response.ok) {
-                console.log(response.json())
-            }
-            throw response;
-        })
-        // type: cors pertains to securtiy measure from the site that hosts the fetch calls
-        .catch(error => {
-            console.error("Error fetching data: ", error)
-        }, [])
-    })
+    // Set state for the search result and the search query
+
+    // Handler for input changes to the search form
+
+    // Handler for what happens when the search form is submitted
 
     return (
         <div>
             <h1 className="home">Lets Build This App!</h1>
+            <SearchForm />
         </div>
     );
 }
