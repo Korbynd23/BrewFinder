@@ -1,22 +1,18 @@
 import "../styles/app.css";
-import React, { useState } from 'react'
-// import SearchResultsContainer from "./SearchResultContainer";
+// import React, {useState, useEffect} from 'react'
+import SearchResultsContainer from "./SearchResultContainer";
 import SearchForm from "./SearchForm";
 
-function Home() {
 
-    // Set state for the search result and the search query
+function App() {
 
-    // Handler for input changes to the search form
+return(
+    <div>
+        <h1>HERE ARE SOME BREWERIES</h1>
+        <SearchForm />
+        <SearchResultsContainer/>
+    </div>
+)
+    }
 
-    // Handler for what happens when the search form is submitted
-
-    return (
-        <div>
-            <h1 className="home">Lets Build This App!</h1>
-            <SearchForm />
-        </div>
-    );
-}
-
-export default Home;
+export default App;

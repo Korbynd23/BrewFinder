@@ -1,4 +1,5 @@
 import axios from 'axios';
+import React, {useState, useEffect} from 'react'
 
 // Using axios, we create a search method that is specific to our use case and export it at the bottom
 const search = () => 
