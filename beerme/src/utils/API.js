@@ -1,8 +1,8 @@
-import axios from 'axios';
-import React, {useState, useEffect} from 'react'
+// import axios from 'axios';
 
-// Using axios, we create a search method that is specific to our use case and export it at the bottom
-const search = () => 
-    axios.get(`https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=columbus&per_page=10`)
+// // Using axios, we create a search method that is specific to our use case and export it at the bottom
 
-export default { search };
+// const search = () => 
+//     axios.get(`https://api.openbrewerydb.org/breweries?by_state=ohio&by_city=${query}&per_page=10`)
+
+// export default { search };
