@@ -1,15 +1,18 @@
 import "../styles/app.css";
-// import React, {useState, useEffect} from 'react'
-import SearchContainer from "./SearchContainer";
+// import SearchContainer from "./SearchContainer";
+import NavBar from "./NavBar";
+import BrewPicOne from "./BrewPicOne";
 
 function App() {
 
-return(
-    <div>
-        <h1>HERE ARE SOME BREWERIES</h1>
-        <SearchContainer/>
-    </div>
-)
-    }
+    return (
+        <div>
+            <NavBar />
+            {/* <body><SearchContainer /></body> */}
+            <BrewPicOne />
+            <footer>Footer</footer>
+        </div>
+    )
+}
 
 export default App;
