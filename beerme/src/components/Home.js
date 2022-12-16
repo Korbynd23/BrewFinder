@@ -1,16 +1,13 @@
 import "../styles/app.css";
 // import React, {useState, useEffect} from 'react'
-import SearchResultsContainer from "./SearchResultContainer";
-import SearchForm from "./SearchForm";
-
+import SearchContainer from "./SearchContainer";
 
 function App() {
 
 return(
     <div>
         <h1>HERE ARE SOME BREWERIES</h1>
-        <SearchForm />
-        <SearchResultsContainer/>
+        <SearchContainer/>
     </div>
 )
     }
