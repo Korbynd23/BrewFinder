@@ -10,7 +10,7 @@ export default function BrewPicOne() {
     
     return (
         <div className='brewPicOne'>
-        <Button variant="warning" onClick={handleShow} className="searchButton">
+        <Button  className="searchButton" variant="warning" onClick={handleShow}>
           Search For Breweries
         </Button>
         <Modal
@@ -31,9 +31,6 @@ export default function BrewPicOne() {
             </Button>
           </Modal.Footer>
         </Modal>
-        {/* <div className='picOneContainer'>
-            <img src={brewPic} alt="outdoor patio of brewing company" className="brewPicOne"></img>
-        </div> */}
       </div>
     );
 }
