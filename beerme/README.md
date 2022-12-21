@@ -3,6 +3,58 @@ https://www.openbrewerydb.org/documentation
 
 # Example of return 
 https://api.openbrewerydb.org/breweries
+{id: 'brewdog-short-north-and-kennels-columbus', name: 'Brewdog Short North & Kennels', brewery_type: 'brewpub', street: '1175 N High St', address_2: null, …}
+address_2
+: 
+null
+address_3
+: 
+null
+brewery_type
+: 
+"brewpub"
+city
+: 
+"Columbus"
+country
+: 
+"United States"
+county_province
+: 
+null
+created_at
+: 
+"2022-11-11T05:07:58.723Z"
+id
+: 
+"brewdog-short-north-and-kennels-columbus"
+latitude
+: 
+"39.98637"
+longitude
+: 
+"-83.00579"
+name
+: 
+"Brewdog Short North & Kennels"
+phone
+: 
+"614-908-3053"
+postal_code
+: 
+"43201"
+state
+: 
+"Ohio"
+street
+: 
+"1175 N High St"
+updated_at
+: 
+"2022-11-11T05:07:58.723Z"
+website_url
+: 
+"https://www.brewdog.com/"
 
 <!-- npm install react-bootstrap bootstrap -->
 
